@@ -21,22 +21,20 @@
                                 <div>
                                     <p><%= i.name %></p>
                                 </div>
-                                <!-- <p><%= i.name %></p> -->
                                 <div>
                                     <p><%= i.phone %></p>
                                 </div>
                                 
                             </div>
                             <div class="delete-button">
-                                <a href="/delete-contact/?phone=<%= i.phone %>&<%= i.name%>">
+                                <a href="/delete-contact/?id=<%= i.id %>">
                                     
                                     <i class="fas fa-window-close"></i>
-                                        
-                                    </i>
+                                    
                                 </a>
                             </div>
                         </li>
-                <% } %>
+                <% } %> 
             </ul>
         </div>
             <form id="new-contact-form" action="/create-contact" method="POST">
